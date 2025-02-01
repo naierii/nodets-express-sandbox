@@ -1,0 +1,20 @@
+Reian Brendo B. Viloria (09760533970)
+01/03/2025
+
+Dear Hiring Manager,
+
+I am writing to express my keen interest in the Full Stack Developer position, as advertised on LinkedIn. With 5.5 years of experience developing dynamic web applications using Node.js and React, coupled with my strong database knowledge and familiarity with Linux, I am confident I possess the skills and experience to excel in this role.
+
+At Eastvantage, I served as a lead developer, responsible for creating various insurance products and collaborating with external partners. This experience honed my ability to not only develop high-quality applications but also to effectively communicate and collaborate within a team, skills I believe are crucial for mentoring and training junior developers, as outlined in your job description.
+
+I am proficient in both MySQL and PostgreSQL, and I have a solid understanding of Agile/Scrum methodologies.  My experience with GIT repositories and bug tracking software like Jira ensures I can seamlessly integrate into your development workflow. Furthermore, I am a fluent English speaker with excellent written and verbal communication skills.
+
+I am particularly drawn to the opportunity to develop cloud-based platforms and contribute to a continuous enhancement process through code reviews and collaboration with test automation engineers. I am eager to learn and grow within a team environment, and I am confident that my skills and experience will be a valuable asset to your organization.
+
+Thank you for your time and consideration. I look forward to the opportunity to discuss my qualifications further.
+
+Personal website: https://dev-reian.vercel.app/
+
+Sincerely,
+
+Reian Brendo B. Viloria
