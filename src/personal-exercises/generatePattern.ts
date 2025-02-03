@@ -10,16 +10,19 @@ export default function (row: number) {
     return;
   }
 
+  let displayValue: string = "";
   for (let iRow = 1; iRow <= row; iRow++) {
-    let logValue: string = "";
-
     // +1 Represents the adjustment of index
     // Which starts from zero to the business requirement
     // that number should start from 1
     for (let iColumn = 1; iColumn <= iRow; iColumn++) {
-      logValue += `${iColumn}`;
+      displayValue += `${iColumn}`;
     }
 
-    console.log(+logValue);
+    if (iRow + 1 <= row) {
+      displayValue += "\n";
+    }
   }
+
+  return displayValue;
 }

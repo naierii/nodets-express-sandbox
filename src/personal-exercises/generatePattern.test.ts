@@ -12,43 +12,25 @@ describe("Generate Pattern", () => {
    * 12345
    */
 
-  const myTestLogger = jest.spyOn(console, "log");
-
-  afterEach(() => {
-    myTestLogger.mockClear();
-  });
-
   /**
    * SUCCESS CASES
    */
   it("Should log pattern rows of 5", () => {
-    generatePattern(5);
+    const pattern = generatePattern(5);
 
-    expect(myTestLogger.mock.calls[0][0]).toEqual(1);
-    expect(myTestLogger.mock.calls[1][0]).toEqual(12);
-    expect(myTestLogger.mock.calls[2][0]).toEqual(123);
-    expect(myTestLogger.mock.calls[3][0]).toEqual(1234);
-    expect(myTestLogger.mock.calls[4][0]).toEqual(12345);
+    expect(pattern).toBe("1\n12\n123\n1234\n12345");
   });
 
   it("Should log pattern rows of 3", () => {
-    generatePattern(3);
+    const pattern = generatePattern(3);
 
-    expect(myTestLogger.mock.calls[0][0]).toEqual(1);
-    expect(myTestLogger.mock.calls[1][0]).toEqual(12);
-    expect(myTestLogger.mock.calls[2][0]).toEqual(123);
+    expect(pattern).toBe("1\n12\n123");
   });
 
   it("Should log pattern rows of 7", () => {
-    generatePattern(7);
+    const pattern = generatePattern(7);
 
-    expect(myTestLogger.mock.calls[0][0]).toEqual(1);
-    expect(myTestLogger.mock.calls[1][0]).toEqual(12);
-    expect(myTestLogger.mock.calls[2][0]).toEqual(123);
-    expect(myTestLogger.mock.calls[3][0]).toEqual(1234);
-    expect(myTestLogger.mock.calls[4][0]).toEqual(12345);
-    expect(myTestLogger.mock.calls[5][0]).toEqual(123456);
-    expect(myTestLogger.mock.calls[6][0]).toEqual(1234567);
+    expect(pattern).toBe("1\n12\n123\n1234\n12345\n123456\n1234567");
   });
 
   /**
