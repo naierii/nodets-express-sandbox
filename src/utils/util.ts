@@ -1,8 +1,3 @@
-// === FUNCTION EXAMPLES START ===
-// export function testLog(){}
-// export const testLog = () => {}
-// === FUNCTION EXAMPLES END ===
-
 import { ServerResponse } from "http";
 
 export function testImportLog() {
