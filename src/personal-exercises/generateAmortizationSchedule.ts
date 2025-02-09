@@ -57,6 +57,7 @@ export function calculatePrincipalPayment({
   return principalPayment;
 }
 
+// TODO - error handling
 export default function (
   principal: number, // I might wanna make this available for strings. eg. "100,000"
   interestRate: number,
