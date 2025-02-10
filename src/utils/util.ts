@@ -30,13 +30,19 @@ export class ResCustomError extends Error {
     this.statusCode = statusCode;
   }
 }
-export class IncorrectMethod extends ResCustomError {
+export class InternalServerError extends ResCustomError {
   statusCode: number;
 
-  constructor(message = "Method not allowed") {
+  constructor(message = "Internal Server Error") {
     super(message);
     this.message = message;
     this.statusCode = 500;
+  }
+}
+export class IncorrectMethod extends InternalServerError {
+  constructor(message = "Method not allowed") {
+    super(message);
+    this.message = message;
   }
 }
 export class NotFound extends ResCustomError {
