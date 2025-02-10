@@ -9,6 +9,22 @@ describe("Credit Score", () => {
 
     expect(result).toBe(expectedValue);
   });
+  it("Should be excellent - Least value", () => {
+    const expectedValue = "Excellent";
+    const score = 720;
+
+    const result = creditScore(score);
+
+    expect(result).toBe(expectedValue);
+  });
+  it("Should be excellent - Max value", () => {
+    const expectedValue = "Excellent";
+    const score = 850;
+
+    const result = creditScore(score);
+
+    expect(result).toBe(expectedValue);
+  });
   it("Should be good", () => {
     const expectedValue = "Good";
     const score = 700;

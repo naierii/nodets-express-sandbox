@@ -76,8 +76,9 @@ export const isJson = (str: any): boolean => {
 };
 
 /**
- * Prefer using "throw new Error()" instead of plain
- * "throw" for better logging and debugging experience
+ * Custom error handler that is compatible for my thrown custom errors.
+ *
+ * TODO - create and relocate on error.util.ts
  */
 export const resErrorHandler = (res: ServerResponse, error: unknown) => {
   let errorMessage = "Bad Request";

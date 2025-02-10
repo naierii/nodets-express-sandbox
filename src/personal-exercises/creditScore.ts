@@ -1,10 +1,9 @@
 export default (creditScore: number | string): string | void => {
-  /**
-   * On a normal project, this should be stored in DB or Parameter Store or ENV variables
-   * for easier possible configurations.
-   */
-
   try {
+    /**
+     * On a normal project, this should be stored in DB or Parameter Store or ENV variables
+     * for easier possible configurations.
+     */
     const ratings = {
       excellent: [720, 850],
       good: [680, 719],
