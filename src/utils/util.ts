@@ -39,10 +39,11 @@ export class InternalServerError extends ResCustomError {
     this.statusCode = 500;
   }
 }
-export class IncorrectMethod extends InternalServerError {
+export class IncorrectMethod extends ResCustomError {
   constructor(message = "Method not allowed") {
     super(message);
     this.message = message;
+    this.statusCode = 405;
   }
 }
 export class NotFound extends ResCustomError {
