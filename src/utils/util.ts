@@ -19,7 +19,7 @@ export const rollDice = (min = 1, max = 6) => {
  * I personally like this, so fix
  * Babel version instead???
  *
- * Relocate this into an custom-error-util.ts
+ * Relocate this into an error.util.ts
  * or something.
  */
 export class ResCustomError extends Error {
