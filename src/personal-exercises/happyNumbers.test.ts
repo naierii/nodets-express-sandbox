@@ -30,7 +30,6 @@ describe("Happy Numbers", () => {
     const expectedOutcome = null;
     const testValue = -5;
 
-    // Expect a console.error in the app with certain message
     const errorMock = jest.spyOn(console, "error");
     const expectedErrorMessage =
       "Numbers should be a positive, non-zero number";
@@ -44,7 +43,6 @@ describe("Happy Numbers", () => {
     const expectedOutcome = null;
     const testValue = {};
 
-    // Expect a console.error in the app with certain message
     const errorMock = jest.spyOn(console, "error");
     const expectedErrorMessage = "Data type is incompatible";
 
