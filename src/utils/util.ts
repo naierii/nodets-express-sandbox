@@ -15,7 +15,7 @@ export const rollDice = (min = 1, max = 6) => {
  *
  * Warning! Some article says using
  * custom error like this can have a problem
- * with Babel compilation.
+ * with Babel compilation (eg. create-react-app).
  * I personally like this, so fix
  * Babel version instead???
  *
@@ -77,7 +77,7 @@ export const isJson = (str: any): boolean => {
 };
 
 /**
- * Custom error handler that is compatible for my thrown custom errors.
+ * Custom error handler that is compatible for thrown custom errors.
  *
  * TODO - create and relocate on error.util.ts
  */
