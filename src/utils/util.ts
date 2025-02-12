@@ -86,7 +86,7 @@ export const resErrorHandler = (res: ServerResponse, error: unknown) => {
   let errorStatusCode = 400;
   let errorStack;
 
-  let errorData: { [key: string]: any } = {};
+  let errorData: { message?: string; statusCode?: number } = {};
 
   if (error instanceof ResCustomError || error instanceof Error) {
     if (!isJson(error.message)) {
