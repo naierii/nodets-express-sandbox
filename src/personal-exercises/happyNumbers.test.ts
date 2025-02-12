@@ -26,7 +26,7 @@ describe("Happy Numbers", () => {
   });
 
   // FAILED SCENARIOS & EDGE CASES
-  it("Should not allow numbers less than 0", () => {
+  it("Should not allow numbers less than 1", () => {
     const expectedOutcome = null;
     const testValue = -5;
 
