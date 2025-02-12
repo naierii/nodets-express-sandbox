@@ -32,7 +32,8 @@ describe("Happy Numbers", () => {
 
     // Expect a console.error in the app with certain message
     const errorMock = jest.spyOn(console, "error");
-    const expectedErrorMessage = "Numbers should be a positive number";
+    const expectedErrorMessage =
+      "Numbers should be a positive, non-zero number";
 
     const outcome = happyNumbers(testValue);
 
