@@ -4,7 +4,7 @@ export function testImportLog() {
   console.log("OwO");
 }
 
-export const rollDice = (min: number = 1, max: number = 6) => {
+export const rollDice = (min = 1, max = 6) => {
   const minCeiled = Math.ceil(min);
   const maxFloored = Math.floor(max);
   return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
