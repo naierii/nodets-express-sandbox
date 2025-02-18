@@ -1,6 +1,6 @@
 # Amortization Schedule API
 
-This README describes how to test the (ongoing) Amortization Schedule API.
+This README describes how to test the Amortization Schedule API.
 
 ## Testing
 
@@ -22,7 +22,7 @@ This method uses Jest for automated unit testing. It provides fast, isolated fee
 
     - `npx jest`: Executes the Jest test runner. `npx` ensures you're using the locally installed version of Jest (from your `node_modules`).
     - `--watchAll`: Watches for changes in your code and automatically re-runs the tests when changes are detected. This is great for development.
-    - `-- schedules.test`: Adjust this to match your actual test file name(s). If you want to run _all_ tests, you can omit this part: `npx jest --watchAll`.
+    - `-- schedules.test`: This is the file we want to test. If you want to run _all_ tests, you can omit this part: `npx jest --watchAll`.
 
 ### 2. Manual Testing with `curl` and a Development Server
 
