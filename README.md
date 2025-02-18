@@ -67,7 +67,7 @@ This method involves running a local development server and using `curl` (or an 
 ````markdown
 ### API Endpoints
 
-#### `GET /amortization/schedules` (or `POST`, depending on your API)
+#### `GET /amortization/schedules`
 
 **Description:** Calculates and returns an amortization schedule.
 
