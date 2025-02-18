@@ -58,7 +58,7 @@ export function calculatePrincipalPayment({
 }
 
 // TODO - error handling
-export default function (
+export function generateAmortizationSchedule(
   principal: number, // I might wanna make this available for strings. eg. "100,000"
   interestRate: number,
   loanTerm: number

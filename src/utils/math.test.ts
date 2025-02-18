@@ -1,7 +1,8 @@
-import generateAmortizationSchedule, {
+import {
+  generateAmortizationSchedule,
   calculateMonthlyPayment,
   calculatePrincipalPayment,
-} from "./generateAmortizationSchedule";
+} from "./math.util";
 
 describe("Loan Amortization Schedule", () => {
   it("Should return monthly payment amount from a loan data of $100,00 at 5% interest for 30 years", () => {
