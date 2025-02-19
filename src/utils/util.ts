@@ -1,4 +1,4 @@
-import { ServerResponse } from "http";
+import { type Response } from "express";
 
 export function testImportLog() {
   console.log("OwO");
@@ -80,8 +80,9 @@ export const isJson = (str: any): boolean => {
  * Custom error handler that is compatible for thrown custom errors.
  *
  * TODO - create and relocate on error.util.ts
+ * TODO - Error message for connection error is not properly logged
  */
-export const resErrorHandler = (res: ServerResponse, error: unknown) => {
+export const resErrorHandler = (res: Response, error: unknown) => {
   let errorMessage = "Bad Request";
   let errorStatusCode = 400;
   let errorStack;
@@ -121,12 +122,7 @@ export const resErrorHandler = (res: ServerResponse, error: unknown) => {
     errorStack
   );
 
-  res.writeHead(errorStatusCode, {
-    "content-type": "application/json",
+  res.status(errorStatusCode).json({
+    message: errorMessage,
   });
-  res.end(
-    JSON.stringify({
-      message: errorMessage,
-    })
-  );
 };
